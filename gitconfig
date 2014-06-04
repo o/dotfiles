@@ -1,0 +1,13 @@
+[color]
+	ui = true
+[core]
+	editor = vim
+	pager = less -+F
+	excludesfile = ~/dotfiles/gitignore_global
+[user]
+	name = Osman Ungur
+	email = osmanungur@gmail.com
+[push]
+	default = simple
+[merge]
+	conflictstyle = diff3
