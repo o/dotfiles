@@ -1,0 +1,30 @@
+startup_message off
+term screen-256color
+
+autodetach on
+vbell off
+
+deflogin on
+defutf8 on
+
+shell bash 
+shelltitle '$ |bash'
+
+altscreen on
+nonblock on
+mousetrack on
+
+msgwait 1
+defscrollback 5000
+
+caption always "%{= kw}%-w%{= BW}%n %t%{-}%+w %-= %c"
+hardstatus alwayslastline
+
+bind ',' prev
+bind '.' next
+
+bind = resize =
+bind + resize +1
+bind - resize -1
+bind _ resize max
+
