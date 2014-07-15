@@ -38,3 +38,7 @@ Mac OS X Mission Control shortcuts conflicting with vim tab switching shortcuts.
     <C-n> :NERDTreeToggle
     \b :TagbarToggle
 
+####Fixing Bash on OS X
+
+    brew install bash;echo /usr/local/bin/bash|sudo tee -a /etc/shells;chsh -s /usr/local/bin/bash
+
