@@ -9,6 +9,7 @@ defutf8 on
 
 shell bash 
 shelltitle '$ |bash'
+shell -$SHELL
 
 altscreen on
 nonblock on
@@ -28,3 +29,5 @@ bind + resize +1
 bind - resize -1
 bind _ resize max
 
+# Make xterm scrolling work properly with screen.
+termcapinfo xterm-256color|xterm-color|xterm|xterms|xs|rxvt ti@:te@
