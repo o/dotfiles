@@ -1,9 +1,8 @@
 ### Dotfiles
 
-* Clone repository to your home folder.
-* Symlink rc files to your home folder with dot prefixed filenames. (like `bash_profile > .bash_profile`)
+Collection of my dotfiles, including configurations for vim, bash, screen, mutt and git comes with sensible defaults. My goal is keeping this configurations minimal and with less customized key bindings. This configurations both tested / running on Mac OS X and Ubuntu, if you have any issues with this configurations please open an issue to me.
 
-#### Requirements
+#### Requirements for each rc file
 
 * vim 2.7+
 * bash 4.0+
@@ -13,6 +12,9 @@
 * lynx
 
 #### Installation
+
+* Clone repository to your home folder.
+* Symlink rc files (all configuration files is optional, you should activate any of them you need) to your home folder with dot prefixed filenames. (like `bash_profile > .bash_profile`)
 
     $ ln -s dotfiles/bash_profile .bash_profile
 
@@ -68,16 +70,32 @@ Fixing Bash on OS X
 
     brew install bash;echo /usr/local/bin/bash|sudo tee -a /etc/shells;chsh -s /usr/local/bin/bash
 
-For installing GNU screen configuration:
+GNU Screen configuration customized for daily basic use, activate it with:
 
     ln -s dotfiles/screenrc .screenrc
+    
+Key bindings
 
-To activating muttrc GMail configuration:
+    bind ',' prev
+    bind '.' next
+
+    bind = resize =
+    bind + resize +1
+    bind - resize -1
+    bind _ resize max
+
+muttrc configuration is fairly customized for using with GMail, activate it with:
 
     ln -s dotfiles/muttrc .muttrc
 
-You need to change username / password configration for yourself in `muttrc` file. Also `muttrc` configured for displaying HTML mails, you must install `lynx` for that.
+Key bindings
 
-This configrations both tested on Mac OS X and Ubuntu, if you have any issues with this configrations please open an issue to me.
+    bind editor <space> noop
+    macro index gi "<change-folder>=INBOX<enter>" "Go to inbox"
+    macro index ga "<change-folder>=[Gmail]/All Mail<enter>" "Go to all mail"
+    macro index gs "<change-folder>=[Gmail]/Sent Mail<enter>" "Go to Sent Mail"
+    macro index gd "<change-folder>=[Gmail]/Drafts<enter>" "Go to drafts"
+
+You need to change username / password configration for yourself in `muttrc` file. Also mutt configured for displaying HTML mails instead of plain text, you must install `lynx` for that.
 
 
