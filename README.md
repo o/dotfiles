@@ -16,6 +16,7 @@ Collection of my dotfiles, including configurations for vim, bash, screen, mutt 
 * Clone repository to your home folder.
 * Symlink rc files (all configuration files is optional, you should activate any of them you need) to your home folder with dot prefixed filenames. (like `bash_profile > .bash_profile`)
 
+For example:
 
     $ ln -s dotfiles/bash_profile .bash_profile
 
