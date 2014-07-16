@@ -34,6 +34,10 @@ set beep_new = yes
 set copy = no
 set sort = "reverse-date"
 
+set mailcap_path = ~/dotfiles/mailcap
+auto_view text/html
+alternative_order text/plain text/html
+
 bind editor <space> noop
 macro index gi "<change-folder>=INBOX<enter>" "Go to inbox"
 macro index ga "<change-folder>=[Gmail]/All Mail<enter>" "Go to all mail"
