@@ -38,4 +38,6 @@ alias -- -='cd -'
 
 alias please='sudo'
 
-#export PATH=/usr/local/sbin:/usr/local/bin:/usr/local/opt/php55/bin:/usr/local/opt/php55/sbin:$PATH
+if [ -n "$STY" ]; then
+	export PS1='\[\033k\033\\\]'$PS1
+fi
