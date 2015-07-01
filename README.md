@@ -36,6 +36,10 @@ In vim
 
     :BundleInstall
 
+Or from shell
+
+    vim +BundleInstall +qall!
+
 This command installs following packages:
 
 * gitgutter
