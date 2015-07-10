@@ -7,6 +7,7 @@
 [user]
 	name = Osman Ungur
 	email = osmanungur@gmail.com
+	signingkey = 6CA0AE98
 [push]
 	default = simple
 [merge]
