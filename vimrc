@@ -16,10 +16,13 @@ set nowb
 set noswapfile
 
 set ruler
+set cursorline
+set number
 
 set expandtab
 set shiftwidth=4
 set tabstop=4
+set softtabstop=4
 set smarttab
 
 set backspace=indent,eol,start
@@ -69,7 +72,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 
-nmap \b :TagbarToggle<CR>
+nmap <Leader>b :TagbarToggle<CR>
 let g:tagbar_autofocus = 1
 
 nmap <C-k> :wincmd k<CR>
@@ -81,7 +84,7 @@ nnoremap <C-Right> :tabnext<CR>
 nnoremap <C-Left> :tabprevious<CR>
 nnoremap <C-t> :tabnew<CR>
 
-nmap \l :setlocal number!<CR>:setlocal number?<CR>
-nmap \o :set paste!<CR>:set paste?<CR>
+nmap <Leader>l :setlocal number!<CR>:setlocal number?<CR>
+nmap <Leader>o :set paste!<CR>:set paste?<CR>
 
-colorscheme zenburn
+colorscheme Tomorrow 
