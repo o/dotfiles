@@ -45,4 +45,4 @@ fi
 
 HISTSIZE=2000
 HISTFILESIZE=4000
-
+PATH="/home/$USER/apps/bin:/usr/local/sbin:$PATH"
