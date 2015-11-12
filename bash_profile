@@ -35,6 +35,7 @@ alias po='popd'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias -- -='cd -'
+alias fuck='sudo $(history -p \!\!)' 
 
 alias please='sudo'
 
@@ -44,5 +45,4 @@ fi
 
 HISTSIZE=2000
 HISTFILESIZE=4000
-
-PATH="/usr/local/sbin:$PATH"
+PATH="/home/$USER/apps/bin:/usr/local/sbin:$PATH"
