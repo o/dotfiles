@@ -87,4 +87,4 @@ nnoremap <C-t> :tabnew<CR>
 nmap <Leader>l :setlocal number!<CR>:setlocal number?<CR>
 nmap <Leader>o :set paste!<CR>:set paste?<CR>
 
-colorscheme Tomorrow 
+colorscheme zenburn

@@ -2,9 +2,13 @@
 shopt -s histappend
 shopt -s extglob
 shopt -s cdspell
+shopt -s dirspell
 shopt -s cmdhist
 shopt -s checkwinsize
 shopt -s autocd
+
+# Automatically trim long paths in the prompt (requires Bash 4.x)
+PROMPT_DIRTRIM=2
 
 # git prompt support
 source ~/dotfiles/git-prompt.sh
@@ -32,6 +36,7 @@ alias l='ls -lah'
 alias pu='pushd'
 alias po='popd'
 
+alias cd..='cd ..'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias -- -='cd -'
@@ -42,7 +47,10 @@ if [ -n "$STY" ]; then
 	export PS1='\[\033k\033\\\]'$PS1
 fi
 
+#Bash history settings
 HISTSIZE=2000
 HISTFILESIZE=4000
+HISTCONTROL="erasedups:ignoreboth"
 
 PATH="/usr/local/sbin:$PATH"
+
