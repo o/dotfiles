@@ -43,14 +43,17 @@ alias -- -='cd -'
 
 alias please='sudo'
 
+alias prettyjson='python -m json.tool | pygmentize -l javascript'
+
 if [ -n "$STY" ]; then
 	export PS1='\[\033k\033\\\]'$PS1
 fi
 
 #Bash history settings
-HISTSIZE=2000
-HISTFILESIZE=4000
+HISTSIZE=4000
+HISTFILESIZE=8000
 HISTCONTROL="erasedups:ignoreboth"
+HISTTIMEFORMAT='%F %T '
 
 PATH="/usr/local/sbin:$PATH"
 
