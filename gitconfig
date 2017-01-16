@@ -12,3 +12,5 @@
 	default = simple
 [merge]
 	conflictstyle = diff3
+[commit]
+	template = /Users/osman/dotfiles/git-commit-message
