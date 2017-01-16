@@ -13,4 +13,5 @@
 [merge]
 	conflictstyle = diff3
 [commit]
-	template = /Users/osman/dotfiles/git-commit-message
+	template = ~/dotfiles/git-commit-message
+
