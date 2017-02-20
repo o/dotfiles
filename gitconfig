@@ -14,4 +14,8 @@
 	conflictstyle = diff3
 [commit]
 	template = ~/dotfiles/git-commit-message
+[pager]
+    log = ~/dotfiles/diff-highlight | less
+    show = ~/dotfiles/diff-highlight | less
+    diff = ~/dotfiles/diff-highlight | less
 
