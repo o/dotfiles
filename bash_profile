@@ -20,7 +20,7 @@ export GIT_PS1_SHOWUNTRACKEDFILES=true
 export GIT_PS1_SHOWUPSTREAM="auto"
 
 # export PS1="\u \w \$(__git_ps1 '(%s)') \$ "
-export PS1="\[\e[1;31m\]\h\[\e[m\] \[\e[1;32m\]\u\[\e[m\] \[\e[1;36m\]\w\[\e[m\] \[\e[1;33m\]\$(__git_ps1 '(%s)')\[\e[m\]\n\[\e[1;30m\]\$\[\e[m\] "
+export PS1="\[\e[1;37m\]\t\[\e[m\] \[\e[1;31m\]\h\[\e[m\] \[\e[1;32m\]\u\[\e[m\] \[\e[1;36m\]\w\[\e[m\] \[\e[1;33m\]\$(__git_ps1 '(%s)') \[\e[m\]\n\[\e[1;30m\]\$\[\e[m\] "
 
 # colored grep
 export GREP_OPTIONS='--color=auto'
