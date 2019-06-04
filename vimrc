@@ -55,7 +55,8 @@ Plugin 'honza/vim-snippets'
 
 Plugin 'majutsushi/tagbar'
 
-Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 
 Plugin 'spf13/vim-autoclose'
 Plugin 'ervandew/supertab'
@@ -88,3 +89,4 @@ nmap <Leader>l :setlocal number!<CR>:setlocal number?<CR>
 nmap <Leader>o :set paste!<CR>:set paste?<CR>
 
 colorscheme zenburn
+let g:airline_theme='zenburn'
