@@ -43,13 +43,19 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
+
 Plugin 'tpope/vim-fugitive'
+Plugin 'airblade/vim-gitgutter'
+
 Plugin 'kien/ctrlp.vim'
+
 Plugin 'scrooloose/nerdtree'
+
 Plugin 'scrooloose/syntastic'
 
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
+
 Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets'
 
@@ -59,6 +65,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 
 Plugin 'spf13/vim-autoclose'
+
 Plugin 'ervandew/supertab'
 
 Plugin 'flazz/vim-colorschemes'
