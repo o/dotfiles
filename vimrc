@@ -1,6 +1,7 @@
 syntax on
 
 set updatetime=200
+set mouse=a
 
 set encoding=utf8
 
