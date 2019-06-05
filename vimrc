@@ -1,5 +1,7 @@
 syntax on
 
+set updatetime=200
+
 set encoding=utf8
 
 set ignorecase
