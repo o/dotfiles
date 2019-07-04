@@ -7,7 +7,7 @@ shopt -s cmdhist
 shopt -s checkwinsize
 shopt -s autocd
 
-# Automatically trim long paths in the prompt (requires Bash 4.x)
+# Automatically trim long paths in the prompt (requires Bash 4.0+)
 PROMPT_DIRTRIM=2
 
 # git prompt support
@@ -57,3 +57,4 @@ HISTTIMEFORMAT='%F %T '
 
 PATH="/usr/local/sbin:$PATH"
 
+test -f ~/dotfiles/bash_profile.post && source ~/dotfiles/bash_profile.post
