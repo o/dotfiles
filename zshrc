@@ -8,7 +8,6 @@ precmd() {
 
 setopt autocd
 setopt extendedglob
-_comp_options+=(globdots)
 
 # History
 HISTSIZE=50000
@@ -53,10 +52,8 @@ zstyle ':completion:*' completer _complete _match _approximate
 zstyle ':completion:*:match:*' original only
 zstyle ':completion:*:approximate:*' max-errors 1 numeric
 
-
 # PS1
 NEWLINE=$'\n' # Used as ${NEWLINE}
-# Without exit code identifier
 PROMPT='%B%(?.%F{green}.%F{red}● )%f%F{242}%*%f %F{red}%m%f %F{green}%n%f %F{cyan}%~%f%F{yellow}${vcs_info_msg_0_}%f${NEWLINE}%F{242}%#%f%b '
 
 # Colored grep
