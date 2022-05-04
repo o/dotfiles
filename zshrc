@@ -54,7 +54,7 @@ zstyle ':completion:*:approximate:*' max-errors 1 numeric
 
 # PS1
 NEWLINE=$'\n' # Used as ${NEWLINE}
-PROMPT='%B%(?.%F{green}.%F{red}● )%f%F{242}%*%f %F{red}%m%f %F{green}%n%f %F{cyan}%~%f%F{yellow}${vcs_info_msg_0_}%f${NEWLINE}%F{242}%#%f%b '
+PROMPT='%B%(?.%F{green}.%F{red}● )%f%F{242}%*%f %F{red}%m%f %F{green}%n%f %F{cyan}%(5~|…/%3~|%~)%f%F{yellow}${vcs_info_msg_0_}%f${NEWLINE}%F{242}%#%f%b '
 
 # Colored grep
 alias grep='grep --color=auto'
