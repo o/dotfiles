@@ -13,3 +13,11 @@ set convert-meta off
 "\e[B": history-search-forward
 "\e[C": forward-char
 "\e[D": backward-char
+
+# Color files by types
+set colored-stats On
+set visible-stats On
+set mark-symlinked-directories On
+set colored-completion-prefix On
+set menu-complete-display-prefix On
+
