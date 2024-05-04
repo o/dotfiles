@@ -1,12 +1,11 @@
 ### Dotfiles
 
-Collection of my dotfiles, including configurations for vim, bash, screen, mutt and git comes with sensible defaults. My goal is keeping this configurations minimal and with less customized key bindings. This configurations both tested / running on Mac OS X and Ubuntu, if you have any issues with this configurations please open an issue to me.
+Collection of my dotfiles, including configurations for vim, tmux, bash, zsh, screen, mutt and git comes with opinionated defaults. These configuration files are tested under Mac OS X and Debian/Ubuntu.
 
 #### Requirements for each rc file
 
 * vim 2.7+
 * bash 4.0+
-* ctags
 * screen 4.0+
 * mutt 1.5+
 * lynx
@@ -33,31 +32,14 @@ This will activates case insensitive filename completion and partial history sea
 
 For the installing vim configuration:
 
-    $ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-    $ ln -s dotfiles/vimrc .vimrc
-
-In vim
-
-    :BundleInstall
-
-Or from shell
-
-    vim +BundleInstall +qall!
+    ./dotfiles/clone-vim-plugins.sh
 
 This command installs following packages:
 
-* gitgutter
-* airline
-* ctrl-p
-* nerdtree
-* syntastic
-* vim-snipmate and snippets
-* tagbar
-* autoclose
-* supertab
-* colorschemes
-
-Note for OSX users: Mission Control shortcuts conflicting with vim tab switching shortcuts. You need to disable shortcuts from System Preferences > Keyboard panel. 
+* lightline.vim
+* vim-signify.git
+* nordtheme
+* https://github.com/jnurmine/Zenburn.git
 
 Vim keymaps
 
@@ -73,9 +55,6 @@ Vim keymaps
     <C-Left> :tabprevious
     <C-t> :tabnew
     
-    <C-n> :NERDTreeToggle
-    \b :TagbarToggle
-
 Fixing Bash on OS X
 
     brew install bash;echo /usr/local/bin/bash|sudo tee -a /etc/shells;chsh -s /usr/local/bin/bash

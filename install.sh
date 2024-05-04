@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -e
+set -euo pipefail
 set -o xtrace
 
 cd ~
@@ -9,6 +9,4 @@ ln -s dotfiles/inputrc .inputrc
 ln -s dotfiles/screenrc .screenrc
 ln -s dotfiles/vimrc .vimrc
 touch dotfiles/bash_profile.post
-git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-vim +BundleInstall +qall!
 
