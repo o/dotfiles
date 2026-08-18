@@ -16,9 +16,13 @@ nonblock on
 mousetrack on
 
 msgwait 1
-defscrollback 5000
+defscrollback 100000
 
-caption always "%{= kw}%-w%{= BW}%n %t%{-}%+w %-= %c"
+defmonitor on
+activity ""
+rendition monitor "=b rw"
+
+caption always "%{= kw}%-w%{=b BW}%n %t%{= kw}%+w %-= %H %m/%d %c "
 hardstatus alwayslastline
 
 bind ',' prev
@@ -28,6 +32,8 @@ bind = resize =
 bind + resize +1
 bind - resize -1
 bind _ resize max
+
+bind r source ~/.screenrc
 
 # Make xterm scrolling work properly with screen.
 termcapinfo xterm-256color|xterm-color|xterm|xterms|xs|rxvt ti@:te@
